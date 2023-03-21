@@ -1,5 +1,9 @@
 
-
+/**
+ * @desc Time complexity  O(n) => n , Space complexity => o(1s)
+ * @param nums 
+ * @returns 
+ */
 function pivotIndex(nums: number[]): number {
     // PSEUDOCODE
     // initialize left sum as 0, 
@@ -14,7 +18,7 @@ function pivotIndex(nums: number[]): number {
         // add current index value to left sum
     // return -1
 
-    
+
     let leftSum: number = 0
     let totalArraySum: number = nums.reduce((prevCumm, curr) => prevCumm + curr, 0)
     for(let i = 0; i < nums.length; i++){
