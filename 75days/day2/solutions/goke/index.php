@@ -24,7 +24,7 @@ function isSubsequence(string $s, string $t): bool
 {
     $j = 0;
     for ($i = 0; $i < strlen($t); $i++)
-        if ($s[$j] == $t[$i])
+        if ($j < strlen($s) && $s[$j] == $t[$i])
             $j++;
     return $j == strlen($s);
 }
